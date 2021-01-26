@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
 import MyHead from '../src/components/MyHead';
@@ -20,12 +21,12 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
-  return(
+  return (
     <>
       <Head>
         <MyHead />
       </Head>
-      <QuizBackground style= {{ backgroundImage: `url(${db.bg})`}} >
+      <QuizBackground style={{ backgroundImage: `url(${db.bg})` }}>
         <QuizContainer>
           <QuizLogo />
           <Widget>
