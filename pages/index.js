@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Head from '../src/components/Head';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -27,27 +28,29 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return(
-    <QuizBackground style= {{ backgroundImage: `url(${db.bg})`}} >
-      <title>JavaPorémScript</title>
-      <QuizContainer>
-        <QuizLogo />
-        <Widget>
-          <Widget.Header>
-            <h1>Olá Jsteiros</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>Esse conteudo se dedica ao JS</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
-          <Widget.Content>
-            <h1>Olá visitante</h1>
-            <p>Esse conteudo se dedica ao JS</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/gabrielf7" />
-    </QuizBackground>
+    <>
+      <Head />
+      <QuizBackground style= {{ backgroundImage: `url(${db.bg})`}} >
+        <QuizContainer>
+          <QuizLogo />
+          <Widget>
+            <Widget.Header>
+              <h1>Olá Jsteiros</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>Esse conteudo se dedica ao JS</p>
+            </Widget.Content>
+          </Widget>
+          <Widget>
+            <Widget.Content>
+              <h1>Olá visitante</h1>
+              <p>Esse conteudo se dedica ao JS</p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/gabrielf7" />
+      </QuizBackground>
+    </>
   );
 }
