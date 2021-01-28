@@ -1,18 +1,12 @@
-[![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/gabrielf7/javaporemscript/blob/main/LICENSE)
-
-<div align="right">
+<div align="right" style="border-bottom: 3px solid #ffee58">
   
   <h2>JavaPorémScript</h2>
   
 </div>
 
-![Background do Projeto](/src/assets/EzgdmaCQuT84bgDL4fhXZS.jpg)
+[![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/gabrielf7/javaporemscript/blob/main/LICENSE)
 
-<div align="center">
-  
-  <p> Projeto contém Formulários e Tabelas </p>
-  
-</div>
+![Background do Projeto](/src/assets/EzgdmaCQuT84bgDL4fhXZS.jpg)
 
 ## Tecnologias 
 
