@@ -25,6 +25,7 @@ export default function Home() {
     <>
       <Head>
         <MyHead />
+        <title>JavaPorémScript</title>
       </Head>
       <QuizBackground style={{ backgroundImage: `url(${db.bg})` }}>
         <QuizContainer>
