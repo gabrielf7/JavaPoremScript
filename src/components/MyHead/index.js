@@ -3,7 +3,7 @@ import React from 'react';
 export default function MyHead() {
   return (
     <>
-      <link rel="icon" href="https://raw.githubusercontent.com/gabrielf7/javaporemscript/main/Js_file_6.ico" />
+      <link rel="icon" href="https://raw.githubusercontent.com/gabrielf7/javaporemscript/main/src/assets/favicon.ico" />
       <meta property="og:url" content="https://javaporemscript.vercel.app/" />
       <meta property="og:type" content="Quiz" />
       <meta property="og:title" content="JavaPorémScript" />
