@@ -1,4 +1,4 @@
-<div align="right" border-bottom:"3px solid #ffee58">
+<div align="right">
   
   <h2>JavaPorémScript</h2>
   
