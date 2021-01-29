@@ -1,4 +1,4 @@
-<div align="right" style="border-bottom: 3px solid #ffee58">
+<div align="right" border-bottom:"3px solid #ffee58">
   
   <h2>JavaPorémScript</h2>
   
@@ -6,7 +6,7 @@
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/gabrielf7/javaporemscript/blob/main/LICENSE)
 
-![Background do Projeto](/src/assets/EzgdmaCQuT84bgDL4fhXZS.jpg)
+![Background do Projeto](https://github.com/gabrielf7/javaporemscript/blob/main/src/assets/cafejs-web.jpg)
 
 ## Tecnologias 
 
