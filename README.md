@@ -1,17 +1,37 @@
-# JavaPorémScript
+<div align="right" style="border-bottom: 3px solid #ffee58">
+  
+  <h2>JavaPorémScript</h2>
+  
+</div>
 
-loading...
+[![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/gabrielf7/javaporemscript/blob/main/LICENSE)
 
-## Versioning
+![Background do Projeto](/src/assets/EzgdmaCQuT84bgDL4fhXZS.jpg)
 
-1.0.0
+## Tecnologias 
 
-## License
+<div align="center">
+  
+  <p> Aqui estão as tecnologias utilizadas neste projeto. </p>
+  
+</div>
+ 
+<p align="center">
+  <a href="https://nodejs.org/en/download/">Node</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://nextjs.org/">Next.JS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://reactjs.org">React.JS</a>
+</p>
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/gabrielf7/javaporemscript/blob/main/LICENSE) file for details.
+## Recursos
+ 
+  - Contém uma página voltada para giz.
+  - Contém várias perguntas envolvendo o tema Javascript.
+  - Exibi campos que contenham perguntas iterativas e questiónario.
+  - Exibi imagems ilustrativas.
+
+## Criado por 
 
 Create by [@gabrielf7](https://github.com/gabrielf7)
 
-### Please follow github and join us!
-Thanks to visiting me and good coding!
-
+### Siga-me no GitHub! Muito obrigado pela atenção!
+Follow me on GitHub! Thanks to visiting me and good coding!
