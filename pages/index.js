@@ -25,7 +25,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
-  // console.log('Retorno do UseState: ', name, setName);
+  console.log('Retorno do UseState: ', name, setName);
 
   function submeter(infoForm) {
     infoForm.preventDefault();
@@ -62,7 +62,7 @@ export default function Home() {
                   placeholder="Digite seu nome"
                 />
                 <button type="submit" disabled={name.length === 0}>
-                  Jogar - 
+                  Jogar -
                   {name}
                 </button>
               </form>
