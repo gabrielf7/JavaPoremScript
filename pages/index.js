@@ -45,15 +45,15 @@ export default function Home() {
                   value={name}
                 />
                 <Button type="submit" disabled={name.length === 0}>
-                  {`${name} - Jogue agora`}
+                  {`Jogue ${name}`}
                 </Button>
               </form>
             </Widget.Content>
           </Widget>
           <Widget>
             <Widget.Content>
-              <h1>Olá visitante</h1>
-              <p>Esse conteudo se dedica ao JS</p>
+              <h1>Quiz da Galera</h1>
+              <p>Contéudo</p>
             </Widget.Content>
           </Widget>
           <Footer />

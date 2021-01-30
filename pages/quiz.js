@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import MyHead from '../src/components/MyHead';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -12,13 +13,8 @@ import Button from '../src/components/Button';
 function LoadingWidget() {
   return (
     <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        [Desafio do Loading]
-      </Widget.Content>
+      <Widget.Header>Carregando...</Widget.Header>
+      <Widget.Loading url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" />
     </Widget>
   );
 }
@@ -83,6 +79,13 @@ function QuizWidget({
     </Widget>
   );
 }
+QuizWidget.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  question: PropTypes.object.isRequired,
+  totalQuestions: PropTypes.number.isRequired,
+  questionIndex: PropTypes.number.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
 
 const screenStates = {
   QUIZ: 'QUIZ',

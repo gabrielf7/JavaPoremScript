@@ -64,4 +64,12 @@ Widget.Topic = styled.a`
   }
 `;
 
+Widget.Loading = styled.div`
+  background: url(${(props) => props.url});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  height: 120px;
+`;
+
 export default Widget;

@@ -4,25 +4,61 @@
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://raw.githubusercontent.com/gabrielf7/javaporemscript/main/src/assets/screen-code-1.svg",
+      "title": "Em que ordem os números de 1 á 4 serão registrados no console? De acordo com o código acima.",
+      "description": "A seguência é a essência",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "4, 1, 3, 2",
+        "1, 4, 3, 2",
+        "2, 3, 1, 4",
+        "3, 2, 4, 1"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media4.giphy.com/media/3ohs7KtxtOEsDwO3GU/giphy.gif",
+      "title": "Entre os significados de = , == e ===, qual é o certo ?",
+      "description": "A diferença é uma coisa boa, mas depende do acaso.",
+      "answer": 2,
+      "alternatives": [
+         "O === significa uma atribuição de valor.",
+         "O = significa uma verificação de igualdade de atribuição de valor",
+         "O === significa uma verificação do valor e um tipo de variável.",
+         "O == significa uma verificação do valor e um tipo de variável."
+      ]
+    },
+    {
+      "image": "https://i.giphy.com/media/GnTHlXYp08VDJllWj7/giphy.webp",
+      "title": "Como você altera a classe de um elemento?",
+      "description": "Todos começam em 'document.getElementById', fica a dica.",
+      "answer": 3,
+      "alternatives": [
+         "('myElement').name = 'anyclass';",
+         "('myElement').classNome = 'anyclass';",
+         "(myElement).clasName = 'anyclass';",
+         "('myElement').className = 'anyclass';"
+      ]
+    },
+    {
+      "image": "https://cdn.dribbble.com/users/891352/screenshots/3675943/lego-loader.gif",
+      "title": "Que tipos de dados são suportados em JavaScript?",
+      "description": "Dados são aquilo que você trabalha",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Number, String, Array, Object, Boolean, Function",
+         "Number, String, Boolean, Byte, Char, Short",
+         "Number, Int, Long, Float, Double, Boolean",
+         "Number, Array, Byte, Char, Object, Boolean, Function"
+      ]
+    },
+    {
+      "image": "https://media4.giphy.com/media/ZFiHU0FV7StuQqXAXp/giphy.gif",
+      "title": "O Spread e Rest permite dada função receber um número indefinido de parâmetros. Essa afirmação está...?",
+      "description": "Os operadores rest e spread permitem trabalhar com múltiplos parâmetro em funções",
+      "answer": 1,
+      "alternatives": [
+         "Verdadeira.",
+         "Falsa."
       ]
     }
   ],
@@ -36,7 +72,7 @@
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
-      "success": "#4CAF50",
+      "successLight": "#95dfe3",
       "black": "#000001"
     },
     "borderRadius": "4px"

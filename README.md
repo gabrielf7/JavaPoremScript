@@ -24,10 +24,10 @@
 
 ## Recursos
  
-  - Contém uma página voltada para giz.
+  - Contém duas página voltada para giz.
   - Contém várias perguntas envolvendo o tema Javascript.
   - Exibi campos que contenham perguntas iterativas e questiónario.
-  - Exibi imagems ilustrativas.
+  - Exibi imagens ilustrativas.
 
 ## Criado por 
 
