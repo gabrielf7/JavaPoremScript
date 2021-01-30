@@ -80,7 +80,6 @@ function QuizWidget({
   );
 }
 QuizWidget.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
   question: PropTypes.object.isRequired,
   totalQuestions: PropTypes.number.isRequired,
   questionIndex: PropTypes.number.isRequired,
