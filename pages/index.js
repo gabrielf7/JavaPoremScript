@@ -28,7 +28,7 @@ export default function Home() {
           <QuizLogo />
           <Widget>
             <Widget.Header>
-              <h1>Olá Jsteiros</h1>
+              <h1>Olá, Jsteiro!</h1>
             </Widget.Header>
             <Widget.Content>
               <form onSubmit={(infoForm) => {
@@ -45,7 +45,7 @@ export default function Home() {
                   value={name}
                 />
                 <Button type="submit" disabled={name.length === 0}>
-                  {`Jogue ${name}`}
+                  Jogar
                 </Button>
               </form>
             </Widget.Content>
@@ -53,7 +53,10 @@ export default function Home() {
           <Widget>
             <Widget.Content>
               <h1>Quiz da Galera</h1>
-              <p>Contéudo</p>
+              <br />
+              <Button as="a" href="https://aluraquiz-css.omariosouto.vercel.app/" target="_blank">
+                aluraquiz-css
+              </Button>
             </Widget.Content>
           </Widget>
           <Footer />

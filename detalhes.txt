@@ -1,0 +1,12 @@
+/src/components/WidgetQuiz : 
+(
+{/* <prev>
+  {
+    JSON.stringify(question, null, 4)
+  }
+</prev> */}
+
+{/* {isQuestionSubmited && isCorrect && <p>Você acertou a pergunta!</p>}
+{isQuestionSubmited && !isCorrect && <p>Você errou a pergunta!</p>} */}
+
+);

@@ -4,7 +4,7 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.mainBg};
+  background-color: ${({ theme }) => theme.colors.black};
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
@@ -18,6 +18,7 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+  box-shadow: 0 0 1em gold;
 `;
 
 Widget.Header = styled.header`
@@ -70,6 +71,20 @@ Widget.Loading = styled.div`
   background-position: center;
   background-size: 20%;
   height: 120px;
+`;
+
+Widget.Results = styled.ul`
+  li {
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    &[data-message='true'] {
+      background-color: ${({ theme }) => theme.colors.correct};
+    }
+    &[data-message='false'] {
+      background-color: ${({ theme }) => theme.colors.incorrect};
+    }
+  }
 `;
 
 export default Widget;

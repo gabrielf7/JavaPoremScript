@@ -12,6 +12,7 @@ const Button = styled.button`
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+  text-decoration: none;
   outline: 0;
   transition: .3s;
   cursor: pointer;
@@ -20,7 +21,9 @@ const Button = styled.button`
     opacity: .5;
   }
   &:disabled {
-    background-color: #979797;
+    background-color: ${({ theme }) => theme.colors.contrastText};
+    color: ${({ theme }) => theme.colors.red};
+    opacity: 60%;
     cursor: not-allowed;
   }
 `;
