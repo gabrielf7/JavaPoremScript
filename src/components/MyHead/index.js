@@ -13,7 +13,7 @@ export default function MyHead() {
       />
       <meta name="keywords" content="JavaScript and Next.js" />
       <meta name="author" content="João Gabriel" />
-      <meta property="og:image" content="https://raw.githubusercontent.com/gabrielf7/javaporemscript/main/src/assets/EzgdmaCQuT84bgDL4fhXZS.jpg" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/gabrielf7/javaporemscript/main/src/assets/cafejs-web.jpg" />
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="600" />
