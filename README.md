@@ -24,7 +24,7 @@
 
 ## Recursos
  
-  - Contém duas página voltada para giz.
+  - Contém duas página voltada para o Quiz.
   - Contém várias perguntas envolvendo o tema Javascript.
   - Exibi campos que contenham perguntas iterativas e questiónario.
   - Exibi imagens ilustrativas.
