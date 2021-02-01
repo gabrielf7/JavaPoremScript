@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Widget from '../Widget';
 import Button from '../Button';
 import AlternativesForm from '../AlternativesForm';
+import BackLinkArrow from '../BackLinkArrow';
 
 export default function WidgetQuiz({
   question,
@@ -31,6 +32,7 @@ export default function WidgetQuiz({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>

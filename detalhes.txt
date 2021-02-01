@@ -10,3 +10,6 @@
 {isQuestionSubmited && !isCorrect && <p>Você errou a pergunta!</p>} */}
 
 );
+
+Loading do Youtube:
+https://i.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.webp

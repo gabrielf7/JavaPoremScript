@@ -3,15 +3,29 @@ import styled from 'styled-components';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  border: 1px solid ${({ theme }) => theme.colors.secondary};
-  border-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  right: 0;
+  z-index: 20;
+  margin-bottom: 20px;
+  div {
+    background-color: #00000070;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: right;
+    border-right: 3px dashed ${({ theme }) => theme.colors.red};
+    border-bottom: 3px dashed ${({ theme }) => theme.colors.red};
+    margin-right: 10px;
+  }
+  section {
+    text-align: center;
+  }
   img {
     width: 58px;
-    margin-right: 23px;
+    margin-top: 20px;
+    margin-right: 20px;
   }
   a {
     color: white;
@@ -31,18 +45,24 @@ export default function Footer(props) {
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
-      </a>
-      <p>
-        Orgulhosamente criado durante
-        {' '}
-        a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
+      <div>
+        <a target="_blank" rel="noreferrer" href="https://www.alura.com.br/">
+          <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
         </a>
-      </p>
+        <p>
+          <section>
+            Orgulhosamente criado durante
+            {' '}
+            a
+            {' '}
+          </section>
+          <section>
+            <a target="_blank" rel="noreferrer" href="https://www.alura.com.br/">
+              <span>Imersão React da Alura</span>
+            </a>
+          </section>
+        </p>
+      </div>
     </FooterWrapper>
   );
 }

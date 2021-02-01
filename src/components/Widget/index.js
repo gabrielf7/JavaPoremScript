@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const Widget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 20px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.black};
   border-radius: 4px;
@@ -18,7 +17,7 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
-  box-shadow: 0 0 1em gold;
+  box-shadow: 0 0 1em ${({ theme }) => theme.colors.primary};
 `;
 
 Widget.Header = styled.header`
@@ -62,6 +61,10 @@ Widget.Topic = styled.a`
   &:hover,
   &:focus {
     opacity: .5;
+  }
+  &[data-disabled='true'] {
+    pointer-events: none;
+    background-color: ${({ theme }) => `${theme.colors.primary}40`};
   }
 `;
 

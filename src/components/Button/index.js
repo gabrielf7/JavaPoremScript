@@ -14,11 +14,14 @@ const Button = styled.button`
   text-transform: uppercase;
   text-decoration: none;
   outline: 0;
-  transition: .3s;
+  transition: .20s;
   cursor: pointer;
   &:hover,
   &:focus {
     opacity: .5;
+  }
+  &:active {
+    transform: scale(1.5);
   }
   &:disabled {
     background-color: ${({ theme }) => theme.colors.contrastText};

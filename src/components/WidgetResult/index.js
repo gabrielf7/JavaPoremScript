@@ -20,7 +20,7 @@ export default function WidgetResult({ results }) {
       return `Precisa estudar, ${name}. Tente novamente mais tarde...`;
     }
     if (dataRespResult < results.length) {
-      return `${data} ${dataRespResult} perguntas.`;
+      return `${data} ${dataRespResult} pergunta(s).`;
     }
     return `${data} todas as perguntas.`;
   };

@@ -1,15 +1,16 @@
-/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import db from '../db.json';
+import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
+import db from '../../db.json';
 
-import MyHead from '../src/components/MyHead';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import WidgetQuiz from '../src/components/WidgetQuiz';
-import WidgetResult from '../src/components/WidgetResult';
-import WidgetLoading from '../src/components/WidgetLoading';
+import MyHead from '../../src/components/MyHead';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import WidgetQuiz from '../../src/components/WidgetQuiz';
+import WidgetResult from '../../src/components/WidgetResult';
+import WidgetLoading from '../../src/components/WidgetLoading';
 
 const screenStates = {
   QUIZ: 'QUIZ',
@@ -17,13 +18,15 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPagina() {
+export default function QuizPagina({ valueBL, externalQuestions, externalBg }) {
+  const bg = valueBL === 1 ? externalBg : db.bg;
+  const QuizQuestions = valueBL === 1 ? externalQuestions : db.questions;
   const [screenState, setScreenState] = useState(screenStates.LOADING);
-  const [results, setResults] = useState([]);
-  const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = QuizQuestions[questionIndex];
+  const totalQuestions = QuizQuestions.length;
+  const [results, setResults] = useState([]);
 
   function addResult(result) {
     setResults([
@@ -35,7 +38,7 @@ export default function QuizPagina() {
   useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 1700);
   }, []);
 
   const handleSubmitQuiz = () => {
@@ -48,12 +51,21 @@ export default function QuizPagina() {
   };
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
       <Head>
-        <MyHead />
         <title>JavaPorémScript</title>
+        <MyHead />
       </Head>
-      <QuizContainer>
+      <QuizContainer
+        as={motion.section}
+        transition={{ deplay: 0, duration: 0.5 }}
+        variants={{
+          show: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+        initial="hidden"
+        animate="show"
+      >
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
           <WidgetQuiz
@@ -74,3 +86,8 @@ export default function QuizPagina() {
     </QuizBackground>
   );
 }
+QuizPagina.propTypes = {
+  valueBL: PropTypes.bool.isRequired,
+  externalQuestions: PropTypes.arrayOf.isRequired,
+  externalBg: PropTypes.arrayOf.isRequired,
+};
