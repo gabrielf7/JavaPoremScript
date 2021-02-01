@@ -7,7 +7,6 @@ const FooterWrapper = styled.footer`
   bottom: 0;
   border: 0;
   right: 0;
-  z-index: 20;
   margin-bottom: 20px;
   div {
     background-color: #00000070;
@@ -38,6 +37,11 @@ const FooterWrapper = styled.footer`
     span {
       text-decoration: underline;
     }
+
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 `;
 
